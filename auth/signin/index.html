@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+  <link rel="icon" href="../../images/63079fb4dcb2d1d1e80cc79a.png" type="image/png">
+  <title>EventCentral - SignIn</title>
+</head>
+
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="">
+    <section class="sign-up-section">
+      <div class="form-wrapper">
+        <div class="form-container">
+          <h2 class="form-title">Sign in to your account</h2>
+
+          <div class="form">
+            <form>
+              <div class="input-group">
+                <div>
+                  <label class="input-label">Email address</label>
+                  <div class="input-wrapper">
+                    <input placeholder="Email" type="email" id="email" class="input-field" name="email" />
+                  </div>
+                </div>
+                <div>
+                  <div class="input-wrapper">
+                    <label class="input-label">Password</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input placeholder="Password" type="password" id="password" class="input-field" name="password" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <button class="submit-button" type="button" id="signin">
+              Sign In
+            </button>
+            <p class="form-subtitle">
+              Don't have an account?
+              <a href="../signup/index.html">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

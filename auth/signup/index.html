@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+  <link rel="icon" href="../../images/63079fb4dcb2d1d1e80cc79a.png" type="image/png">
+  <title>EventCentral - SignUp</title>
+</head>
+
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="">
+    <section class="sign-up-section">
+      <div class="form-wrapper">
+        <div class="form-container">
+          <h2 class="form-title">Sign up to create account</h2>
+
+          <div class="form">
+            <form>
+              <div class="input-group">
+                <div>
+                  <label class="input-label">Full Name</label>
+                  <div class="input-wrapper">
+                    <input placeholder="Full Name" type="text" id="name" class="input-field" name="full_name" />
+                  </div>
+                </div>
+                <div>
+                  <label class="input-label">Email address</label>
+                  <div class="input-wrapper">
+                    <input placeholder="Email" type="email" id="email" class="input-field" name="email" />
+                  </div>
+                </div>
+                <div>
+                  <div class="input-wrapper">
+                    <label class="input-label">Password</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input placeholder="Password" type="password" id="password" class="input-field" name="password" />
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <label class="input-label">Gender</label>
+                </div>
+                <div class="input-wrapper">
+                  <select name="gender" id="gender" class="select-input" required>
+                    <option value="Not Selected" selected disabled>
+                      Select Gender
+                    </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+            <form class="form">
+              <div class="input-group">
+                <div>
+                  <label class="input-label">User Name</label>
+                  <div class="input-wrapper">
+                    <input placeholder="User Name" type="text" id="username" class="input-field" name="user_name" />
+                  </div>
+                </div>
+                <div>
+                  <label class="input-label">Phone Number</label>
+                  <div class="input-wrapper">
+                    <input placeholder="03XX-XXXXXXX" type="number" id="number" class="input-field" />
+                  </div>
+                </div>
+                <div>
+                  <div class="input-wrapper">
+                    <label class="input-label">CNIC</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input placeholder="CNIC" type="number" id="cnic" class="input-field" name="cnic" />
+                  </div>
+                </div>
+                <div>
+                  <div class="input-wrapper">
+                    <label class="input-label">Location</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input placeholder="Location" type="text" id="location" class="input-field" name="location" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <div class="input-wrapper">
+              <label class="input-label">Profile Picture</label>
+            </div>
+            <div class="file-wrapper">
+              <input class="file-input" type="file" id="profilePhotoInput" name="avatar" />
+            </div>
+            <button class="submit-button" type="button" id="signup">
+              Create Account
+            </button>
+            <p class="form-subtitle">Already have an account? Sign In</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
